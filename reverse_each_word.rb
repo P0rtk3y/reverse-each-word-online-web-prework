@@ -7,4 +7,6 @@ end
 
 def reverse_each_word(phrase)
   word_array = phrase.split
-  word_array.collect.each 
+  word_array.collect {|word| (word).reverse} 
+  return word_array.join(" ")
+end
